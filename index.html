@@ -8,45 +8,46 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #222;
+      background-color: #000;
+      color: #eee;
       line-height: 1.6;
     }
 
     .hero {
       position: relative;
       background: url('saudi_skyline.jpg') no-repeat center center/cover;
-      height: 420px;
+      height: 520px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: #fff;
     }
 
     .hero::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+      background-color: rgba(0, 0, 0, 0.7); /* darker overlay for stronger text focus */
       z-index: 1;
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
+      max-width: 90%;
     }
 
     .hero h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       margin: 0;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      color: #fff;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
     }
 
     .hero .tagline {
-      font-size: 1.3rem;
-      margin-top: 10px;
-      color: #f0f0f0;
+      font-size: 1.5rem;
+      margin-top: 15px;
+      color: #ccc;
     }
 
     .section {
@@ -56,7 +57,7 @@
     }
 
     .section h2 {
-      color: #111;
+      color: #fff;
       margin-bottom: 10px;
     }
 
@@ -66,9 +67,9 @@
     }
 
     .list {
-      background: #f7f7f7;
+      background: #111;
       padding: 20px;
-      border: 1px solid #ccc;
+      border: 1px solid #333;
       border-radius: 8px;
     }
 
@@ -85,13 +86,13 @@
       text-align: center;
       margin-top: 30px;
       padding: 20px;
-      background: #efefef;
+      background: #111;
       border-radius: 8px;
     }
 
     .contact a {
-      color: #000;
-      text-decoration: none;
+      color: #fff;
+      text-decoration: underline;
       font-weight: bold;
     }
 
@@ -100,8 +101,8 @@
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
-      color: #777;
-      background-color: #f0f0f0;
+      color: #555;
+      background-color: #000;
     }
   </style>
 </head>
@@ -148,5 +149,3 @@
 
 </body>
 </html>
-
-
